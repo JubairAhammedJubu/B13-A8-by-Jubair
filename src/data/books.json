@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "title": "Clean Code",
+    "author": "Robert C. Martin",
+    "description": "A handbook of agile software craftsmanship for developers.",
+    "category": "Tech",
+    "available_quantity": 6,
+    "image_url": "https://covers.openlibrary.org/b/isbn/9780132350884-L.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Pragmatic Programmer",
+    "author": "Andrew Hunt & David Thomas",
+    "description": "A guide to becoming a better and more effective programmer.",
+    "category": "Science",
+    "available_quantity": 8,
+    "image_url": "https://covers.openlibrary.org/b/isbn/9780201616224-L.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Introduction to Algorithms",
+    "author": "Thomas H. Cormen",
+    "description": "Comprehensive textbook covering modern algorithms.",
+    "category": "Tech",
+    "available_quantity": 5,
+    "image_url": "https://covers.openlibrary.org/b/isbn/9780262033848-L.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Atomic Habits",
+    "author": "James Clear",
+    "description": "A guide on building good habits and breaking bad ones.",
+    "category": "Psychology",
+    "available_quantity": 10,
+    "image_url": "https://covers.openlibrary.org/b/isbn/9780735211292-L.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Rich Dad Poor Dad",
+    "author": "Robert T. Kiyosaki",
+    "description": "Lessons on financial literacy and wealth building.",
+    "category": "Business",
+    "available_quantity": 7,
+    "image_url": "https://covers.openlibrary.org/b/isbn/9781612680194-L.jpg"
+  },
+  {
+    "id": 6,
+    "title": "The Alchemist",
+    "author": "Paulo Coelho",
+    "description": "A philosophical story about following your dreams.",
+    "category": "Fiction",
+    "available_quantity": 9,
+    "image_url": "https://covers.openlibrary.org/b/isbn/9780061122415-L.jpg"
+  },
+  {
+    "id": 7,
+    "title": "To Kill a Mockingbird",
+    "author": "Harper Lee",
+    "description": "A novel about justice and racial inequality in the American South.",
+    "category": "Story",
+    "available_quantity": 4,
+    "image_url": "https://covers.openlibrary.org/b/isbn/9780061120084-L.jpg"
+  },
+  {
+    "id": 8,
+    "title": "1984",
+    "author": "George Orwell",
+    "description": "A dystopian novel about totalitarian surveillance.",
+    "category": "Fiction",
+    "available_quantity": 6,
+    "image_url": "https://covers.openlibrary.org/b/isbn/9780451524935-L.jpg"
+  },
+  {
+    "id": 9,
+    "title": "Sapiens",
+    "author": "Yuval Noah Harari",
+    "description": "A brief history of humankind.",
+    "category": "History",
+    "available_quantity": 5,
+    "image_url": "https://covers.openlibrary.org/b/isbn/9780062316097-L.jpg"
+  },
+  {
+    "id": 10,
+    "title": "The Lean Startup",
+    "author": "Eric Ries",
+    "description": "How modern startups use continuous innovation to succeed.",
+    "category": "Business",
+    "available_quantity": 8,
+    "image_url": "https://covers.openlibrary.org/b/isbn/9780307887894-L.jpg"
+  },
+  {
+    "id": 11,
+    "title": "Deep Work",
+    "author": "Cal Newport",
+    "description": "Rules for focused success in a distracted world.",
+    "category": "Psychology",
+    "available_quantity": 7,
+    "image_url": "https://covers.openlibrary.org/b/isbn/9781455586691-L.jpg"
+  },
+  {
+    "id": 12,
+    "title": "Thinking, Fast and Slow",
+    "author": "Daniel Kahneman",
+    "description": "Explores the two systems that drive the way we think.",
+    "category": "Psychology",
+    "available_quantity": 6,
+    "image_url": "https://covers.openlibrary.org/b/isbn/9780374533557-L.jpg"
+  }
+]
