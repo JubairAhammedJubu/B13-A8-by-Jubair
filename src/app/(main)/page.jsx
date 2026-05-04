@@ -99,7 +99,7 @@ export default async function Home() {
             📚
             <h3 className="font-semibold mt-3">Huge Collection</h3>
             <p className="text-gray-500 text-sm mt-2">
-              Explore books across multiple categories.
+              Explore books across multiple categories
             </p>
           </div>
         </div>
