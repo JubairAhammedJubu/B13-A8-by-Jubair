@@ -9,19 +9,18 @@ export async function proxy(request) {
   const session = await auth.api.getSession({
     headers: await headers(),
   });
-  console.log(session, "session");
 
-  const {pathname} = request.nextUrl;
+  // const {pathname} = request.nextUrl;
 
-  const isProtected =
-    pathname.startsWith("/profile") || pathname.startsWith("/books");
+  // const isProtected =
+  //   pathname.startsWith("/profile") || pathname.startsWith("/books");
 
-  if (!session && isProtected) {
+  if (!session) {
     return NextResponse.redirect(new URL("/login", request.url));
   }
   return NextResponse.next();
 }
 
 export const config = {
-  matcher: ["/profile", "/books/:path*"],
+  matcher: ["/profile", "/books/:path"],
 };
