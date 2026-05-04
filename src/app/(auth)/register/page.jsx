@@ -124,7 +124,7 @@ const RegisterPage = () => {
           </button>
         </form>
 
-        {/* Login Link */}
+       
         <p className="text-center mt-4">
           Already have an account?{" "}
           <Link href="/login" className="text-blue-500 underline">
@@ -132,10 +132,10 @@ const RegisterPage = () => {
           </Link>
         </p>
 
-        {/* Divider */}
+        
         <div className="divider my-4">OR</div>
 
-        {/* Google Login */}
+       
         <button
           onClick={handleGoogleLogin}
           className="btn w-full flex items-center justify-center gap-2 border"

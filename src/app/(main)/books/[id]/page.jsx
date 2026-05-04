@@ -40,7 +40,7 @@ const BookDetailsPage = async ({params}) => {
 
   const handleBorrow = () => {
     if (!isLoggedIn) {
-      router.push("/login"); // 🔹 redirect if logged out
+      router.push("/login"); 
       return;
     }
   }
@@ -48,7 +48,7 @@ const BookDetailsPage = async ({params}) => {
   return (
     <div className="max-w-5xl mx-auto my-5 md:my-10 p-4">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
-        {/* LEFT: IMAGE */}
+        
         <div className="w-full">
           <Image
             src={book.image_url}
@@ -59,7 +59,7 @@ const BookDetailsPage = async ({params}) => {
           />
         </div>
 
-        {/* RIGHT: DETAILS */}
+       
         <div className="flex flex-col gap-4 my-auto">
           <h1 className="text-3xl font-bold text-gray-800">{book.title}</h1>
 
@@ -93,7 +93,7 @@ const BookDetailsPage = async ({params}) => {
           </div>
 
           <div className="flex gap-2 items-center ">
-            {/* Buttons */}
+           
             <BorrowButton book={book} />
 
             <Link href="/allbooks">

@@ -45,7 +45,6 @@ const ProfilePage = () => {
           <h2 className="text-xl font-bold">{user?.name || "Unknown User"}</h2>
         </div>
 
-        {/* Actions */}
         <div className="card-body pt-0 items-center">
           <button
             onClick={() => router.push("/Profile/update")}

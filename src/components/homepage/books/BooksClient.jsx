@@ -23,7 +23,7 @@ const BooksClient = ({books}) => {
 
   return (
     <div className="container mx-auto grid grid-cols-12 gap-2 md:gap-4 my-10 px-2">
-      {/* Sidebar */}
+      
       <div className="col-span-3 text-xs md:text-base">
         <LeftSidebar
           categories={categories}
@@ -32,11 +32,11 @@ const BooksClient = ({books}) => {
         />
       </div>
 
-      {/* Books */}
+      
       <div className="col-span-9">
         <h2 className="font-bold text-center md:text-left md:text-lg mb-4">{selectedCategory} Books</h2>
 
-        {/* Search Bar */}
+        
         <div className="mb-6">
           <input
             type="text"
