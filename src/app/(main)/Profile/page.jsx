@@ -11,7 +11,7 @@ const ProfilePage = () => {
 
   const user = data?.user;
 
-  // ✅ Loading state (IMPORTANT)
+
   if (isLoading) {
     return (
       <div className="min-h-[60vh] flex items-center justify-center">
@@ -20,7 +20,7 @@ const ProfilePage = () => {
     );
   }
 
-  // ✅ Safe fallback if no user
+
   if (!user) {
     return (
       <div className="min-h-[60vh] flex items-center justify-center">
