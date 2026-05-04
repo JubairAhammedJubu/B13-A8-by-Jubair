@@ -48,6 +48,7 @@ const LoginPage = () => {
     if (error) {
       toast.error(error.message || "Google login failed");
     }
+    toast.success("Logged in with Google");
   };
 
   return (
@@ -99,7 +100,9 @@ const LoginPage = () => {
           </fieldset>
 
           {/* Login Button */}
-          <button className="btn w-full bg-slate-800 text-white">Login</button>
+          <button className="btn w-full bg-linear-to-r from-indigo-500 to-purple-600 text-white">
+            Login
+          </button>
         </form>
 
         {/* Divider */}
@@ -116,7 +119,7 @@ const LoginPage = () => {
         {/* Register Link */}
         <p className="mt-4 text-center">
           Don’t have an account?{" "}
-          <Link href="/register" className="text-blue-500">
+          <Link href="/register" className="text-blue-500 underline">
             Register
           </Link>
         </p>

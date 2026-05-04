@@ -7,9 +7,7 @@ const LeftSidebar = ({
 }) => {
   return (
     <div>
-      <h2 className="font-bold text-base md:text-lg mb-4">
-        Categories
-      </h2>
+      <h2 className="font-bold text-base md:text-lg mb-4">Categories</h2>
 
       <ul className="flex flex-col gap-2">
         {categories.map((cat) => (
@@ -18,7 +16,7 @@ const LeftSidebar = ({
               onClick={() => setSelectedCategory(cat)}
               className={`w-full text-center p-2 rounded-md transition ${
                 selectedCategory === cat
-                  ? "bg-purple-600 text-white"
+                  ? "bg-linear-to-r from-indigo-500 to-purple-600 text-white"
                   : "bg-gray-100 hover:bg-gray-200"
               }`}
             >

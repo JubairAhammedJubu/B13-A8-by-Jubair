@@ -97,7 +97,7 @@ const BookDetailsPage = async ({params}) => {
             <BorrowButton book={book} />
 
             <Link href="/allbooks">
-              <button className="btn bg-purple-500 text-white">
+              <button className="btn bg-linear-to-r from-pink-400 to-rose-500 text-white">
                 Back to Books <BsArrowRight />
               </button>
             </Link>

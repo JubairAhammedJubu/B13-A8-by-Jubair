@@ -4,7 +4,8 @@ import Link from "next/link";
 import React, {useState} from "react";
 import {useForm} from "react-hook-form";
 import {FaEye, FaEyeSlash, FaGoogle} from "react-icons/fa";
-import {useRouter} from "next/navigation";
+import { useRouter } from "next/navigation";
+import toast from "react-hot-toast";
 
 const RegisterPage = () => {
   const router = useRouter();
@@ -19,8 +20,6 @@ const RegisterPage = () => {
   const [errorMsg, setErrorMsg] = useState("");
 
   const handleRegisterFunc = async (data) => {
-    setErrorMsg("");
-
     try {
       const result = await authClient.signUp.email({
         name: data.name,
@@ -31,12 +30,13 @@ const RegisterPage = () => {
       });
 
       if (result?.error) {
-        setErrorMsg(result.error.message);
+        toast.error(result.error.message);
       } else {
+        toast.success("Registration successful!");
         router.push("/login");
       }
     } catch (err) {
-      setErrorMsg("Something went wrong");
+      toast.error("Something went wrong");
     }
   };
 
@@ -46,8 +46,9 @@ const RegisterPage = () => {
         provider: "google",
         callbackURL: "/",
       });
+      toast.success("Logged in with Google");
     } catch (err) {
-      setErrorMsg("Google login failed");
+      toast.error("Google login failed");
     }
   };
 
@@ -118,7 +119,7 @@ const RegisterPage = () => {
             )}
           </fieldset>
 
-          <button className="btn w-full bg-slate-800 text-white">
+          <button className="btn w-full bg-linear-to-r from-indigo-500 to-purple-600 text-white">
             Register
           </button>
         </form>
@@ -139,8 +140,7 @@ const RegisterPage = () => {
           onClick={handleGoogleLogin}
           className="btn w-full flex items-center justify-center gap-2 border"
         >
-          <FaGoogle
-           /> Login with Google
+          <FaGoogle /> Login with Google
         </button>
       </div>
     </div>

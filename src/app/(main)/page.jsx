@@ -14,7 +14,7 @@ export default function Home() {
   const featuredBooks = books.slice(0, 4);
 
   return (
-    <div className="container mx-auto my-10">
+    <div className="container p-3 md:p-0 mx-auto my-10">
       <section className="hero min-h-96 bg-linear-to-r from-indigo-500 to-purple-600 text-white rounded-t-xl">
         <div className="text-center">
           <h1 className="text-5xl md:text-6xl font-bold">
@@ -40,8 +40,8 @@ export default function Home() {
         </Marquee>
       </div>
 
-      <section className="py-20">
-        <h2 className="text-5xl font-bold text-center mb-16">Featured Books</h2>
+      <section className="py-10 md:py-20">
+        <h2 className="text-3xl md:text-5xl font-bold text-center mb-8 md:mb-16">Featured Books</h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
           {featuredBooks.map((book) => (
@@ -132,7 +132,7 @@ export default function Home() {
       </section>
 
       {/* 🔶 Extra Section 2: Popular Categories */}
-      <section className=" py-20 text-center">
+      <section className="py-10 md:py-20 text-center">
         <div className=" mx-auto px-4">
           {/* Heading */}
           <h2 className="text-2xl md:text-4xl font-bold text-gray-800 mb-3">

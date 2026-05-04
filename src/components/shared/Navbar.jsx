@@ -10,14 +10,12 @@ import {useRouter} from "next/navigation";
 const Navbar = () => {
   const router = useRouter();
 
-
   const {data: session} = authClient.useSession();
   const user = session?.user;
 
-
   const handleLogout = async () => {
     await authClient.signOut();
-    router.push("/login");
+    window.location.href = "/login";
   };
 
   return (
@@ -53,7 +51,7 @@ const Navbar = () => {
                 <NavLink href={"/allbooks"}>All Books</NavLink>
               </li>
               <li>
-                <NavLink href={"/career"}>My Profile</NavLink>
+                <NavLink href={"/profile"}>My Profile</NavLink>
               </li>
             </ul>
           </div>
@@ -73,12 +71,12 @@ const Navbar = () => {
               <NavLink href={"/allbooks"}>All Books</NavLink>
             </li>
             <li>
-              <NavLink href={"/career"}>My Profile</NavLink>
+              <NavLink href={"/profile"}>My Profile</NavLink>
             </li>
           </ul>
         </div>
 
-        <div className="navbar-end gap-3">
+        <div className="navbar-end mr-3 md:mr-0 gap-3">
           {!user ? (
             <Link
               href="/login"

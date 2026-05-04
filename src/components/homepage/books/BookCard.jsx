@@ -18,7 +18,9 @@ const BookCard = ({book}) => {
         <h2 className="card-title">{book.title}</h2>
 
         <Link href={`/books/${book.id}`}>
-          <button className="btn btn-primary w-full">Details</button>
+          <button className="btn bg-linear-to-r from-indigo-500 to-purple-600 text-white w-full">
+            Details
+          </button>
         </Link>
       </div>
     </div>

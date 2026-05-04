@@ -22,7 +22,10 @@ const BorrowButton = ({book}) => {
   };
 
   return (
-    <button onClick={handleBorrow} className="btn w-40 bg-blue-600 text-white">
+    <button
+      onClick={handleBorrow}
+      className="btn w-40 bg-linear-to-r from-indigo-500 to-purple-600 text-white"
+    >
       Borrow This Book
     </button>
   );
