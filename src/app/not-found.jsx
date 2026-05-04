@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import notFound from "../assets/notfound.jpeg";
+import notFound from "@/assets/notfound.jpeg";
 
 const NotFound = () => {
   return (
