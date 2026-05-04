@@ -1,24 +1,19 @@
 "use client";
 
-export const dynamic = "force-dynamic";
-
 import {authClient} from "@/lib/auth-client";
 import Image from "next/image";
 import {useRouter} from "next/navigation";
-import userImg from "@/assets/user.png";
+import userImg from "@/assets/user.png"
 
 const ProfilePage = () => {
   const {data} = authClient.useSession();
   const user = data?.user;
   const router = useRouter();
 
-  if (!user) {
-    return <div className="text-center mt-10">Loading...</div>;
-  }
-
   return (
     <div className="min-h-[60vh] flex items-center justify-center bg-base-200 px-4">
       <div className="card w-full max-w-md bg-base-100 shadow-xl m-5 border border-base-300">
+        {/* Avatar */}
         <div className="flex flex-col items-center pt-8 space-y-2">
           <div className="rounded-full">
             <Image
@@ -33,10 +28,11 @@ const ProfilePage = () => {
           <h2 className="text-xl font-bold">{user.name}</h2>
         </div>
 
+        {/* Actions */}
         <div className="card-body pt-0 items-center">
           <button
             onClick={() => router.push("/profile/update")}
-            className="btn bg-linear-to-r from-indigo-500 to-purple-600 text-white"
+            className="btn bg-linear-to-r from-indigo-500 to-purple-600 text-white "
           >
             Profile Update
           </button>
