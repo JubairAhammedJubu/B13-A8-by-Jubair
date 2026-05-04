@@ -6,13 +6,13 @@ import {useRouter} from "next/navigation";
 import userImg from "@/assets/user.png";
 
 const ProfilePage = () => {
-  const {data, isLoading} = authClient.useSession();
+  const {data, isPending} = authClient.useSession();
   const router = useRouter();
 
   const user = data?.user;
 
 
-  if (isLoading) {
+  if (isPending) {
     return (
       <div className="min-h-[60vh] flex items-center justify-center">
         <p>Loading profile...</p>
