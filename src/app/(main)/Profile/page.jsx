@@ -11,7 +11,6 @@ const ProfilePage = () => {
 
   const user = data?.user;
 
-
   if (isPending) {
     return (
       <div className="min-h-[60vh] flex items-center justify-center">
@@ -19,7 +18,6 @@ const ProfilePage = () => {
       </div>
     );
   }
-
 
   if (!user) {
     return (
@@ -50,7 +48,7 @@ const ProfilePage = () => {
         {/* Actions */}
         <div className="card-body pt-0 items-center">
           <button
-            onClick={() => router.push("/profile/update")}
+            onClick={() => router.push("/Profile/update")}
             className="btn bg-linear-to-r from-indigo-500 to-purple-600 text-white"
           >
             Profile Update

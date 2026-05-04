@@ -23,7 +23,7 @@ const UpdateProfilePage = () => {
 
       if (res?.data?.status) {
         toast.success("Profile updated successfully!");
-        router.push("/profile");
+        router.push("/Profile");
       } else {
         toast.error("Failed to update profile");
       }

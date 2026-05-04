@@ -13,7 +13,7 @@ export async function proxy(request) {
   // const {pathname} = request.nextUrl;
 
   // const isProtected =
-  //   pathname.startsWith("/profile") || pathname.startsWith("/books");
+  //   pathname.startsWith("/Profile") || pathname.startsWith("/books");
 
   if (!session) {
     return NextResponse.redirect(new URL("/login", request.url));
@@ -22,5 +22,5 @@ export async function proxy(request) {
 }
 
 export const config = {
-  matcher: ["/profile", "/books/:path"],
+  matcher: ["/Profile", "/books/:path"],
 };
