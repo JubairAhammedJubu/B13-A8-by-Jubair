@@ -1,55 +1,44 @@
-# <img src="assets/logo.png">
+# 📚 Online Book Borrowing Platform
 
-Dragoon News is a responsive front-end web application build with react that delivers real-time news articles on a variety of topics, complete with user authentication for personalized access. Built with modern web technologies, the app ensures a seamless user experience across devices and secure login functionality using firebase authentication.let's build the project together. 😎
+## 📖 Project Name
+Bookify
 
-### Base URL
+---
 
-The base URL for the API is:
-[https://openapi.programming-hero.com/api](https://openapi.programming-hero.com/api)
+## 📝 Short Description
+A modern and responsive web application that digitizes the traditional library experience.  
+Users can explore books, filter by categories, and borrow books online. The system is built with security, performance, and smooth user experience using Next.js, MongoDB, and BetterAuth.
 
-### Endpoints
+---
 
-1. **Get All News Categories**
+## 🛠️ Technologies Used
+- Next.js
+- React
+- Tailwind CSS
+- DaisyUI / HeroUI
+- MongoDB
+- BetterAuth
+- JavaScript (ES6+)
 
-   - **URL**: `/news/categories`
-   - **Full URL**: https://openapi.programming-hero.com/api/news/categories
-   - **Method**: `GET`
-   - **Description**: Retrieves a list of all available news categories.
+---
 
-2. **Get All News in a Category**
+## ✨ Key Features
 
-   - **URL Format**: `/news/category/{category_id}`
-   - **Full URL Example**: https://openapi.programming-hero.com/api/news/category/01
-   - **Method**: `GET`
-   - **Description**: Retrieves all news articles within a specified category.
-   - **Path Parameter**:
-     - `category_id` (string): The unique ID of the category.
+### 1. 📚 Book Management
+Users can browse a collection of books, search by title, and filter by categories like Story, Tech, and Science.
 
-3. **Get News Detail by ID**
-   - **URL Format**: `/news/{news_id}`
-   - **Full URL Example**: https://openapi.programming-hero.com/api/news/0282e0e58a5c404fbd15261f11c2ab6a
-   - **Method**: `GET`
-   - **Description**: Retrieves detailed information about a specific news article.
-   - **Path Parameter**:
-     - `news_id` (string): The unique ID of the news article.
+### 2. 🔐 Authentication System
+Secure login and registration system with email/password and Google authentication using BetterAuth.
 
-## Layouts & Design
+### 3. 👤 User Profile & Borrow System
+Users can view their profile, update information, and borrow books through protected routes.
 
-There will be three layour for the project. watch below designs to understand layout structure/
+---
 
-### News Layout
+## 📱 Features Summary
+- Fully responsive design (mobile, tablet, desktop)
+- Protected routes for secure access
+- Category-based book filtering
+- Modern UI with clean design
 
- <img src="https://i.ibb.co.com/sJFwsTBZ/home-layout.png"/>
-
-### News-Details Layout
-
- <img src="https://i.ibb.co.com/4ZJ3wBfq/news-details-layout.png"/>
-
-### Auth Layout
-
-<table>
- <tr>
-   <td> <img  src="https://i.ibb.co.com/BVtvwgbN/auth-layout-login.png"/></td>
-   <td> <img src="https://i.ibb.co.com/27Rmt7C5/auth-layout-register.png"/></td>
- </tr> 
-</table>
+---
